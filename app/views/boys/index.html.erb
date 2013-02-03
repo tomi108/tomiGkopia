@@ -1,0 +1,7 @@
+Zoznam chlapcov:
+
+<ul>
+	<% @boys.each do |boy| %>
+		<li><%= boy.name %> ma <%= boy.age %> rokov. <%= link_to "Show", "/boys/#{boy.id}" %></a></li>
+	<% end  %>
+</ul>

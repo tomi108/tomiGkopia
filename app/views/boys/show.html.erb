@@ -1,0 +1,5 @@
+Chlapec:
+<%= @boy.name %>
+<%= @boy.age %>
+<%= button_to "Update", "/boys/#{@boy.id}/edit", :method => "get" %>
+<%= button_to "Delete", @boy_url, :method => "delete" %>

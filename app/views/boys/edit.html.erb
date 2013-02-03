@@ -1,0 +1,9 @@
+Formular na editovanie noveho chlapca: <br />
+
+<%= form_tag "/boys/#{@boy.id}", :method => "put" do %>
+  <%= label_tag :name, "Name" %>
+  <%= text_field_tag :name, @boy.name %>
+  <%= label_tag :age, "Age" %>
+  <%= number_field_tag :age, @boy.age %>
+  <%= submit_tag "Update" %>
+<% end %>
